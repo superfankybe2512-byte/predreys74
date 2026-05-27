@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Предрейс74 — Предрейсовые осмотры водителей от 70 ₽ | Челябинск и вся Россия</title>
 <meta name="description" content="Дистанционные предрейсовые медосмотры водителей. ПАК DIMECO T1. Без штрафов. Подключение за 3 дня. От 70 ₽ за осмотр. Работаем 24/7. Лицензия МЗ РФ.">
-<!-- Yandex.Metrika counter - REPLACE 00000000 WITH REAL ID -->
+<!-- Yandex.Metrika counter - REPLACE 109438091 WITH REAL ID -->
 <script type="text/javascript">
 (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
 m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
 (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-ym(00000000, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+ym(109438091, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -160,7 +160,12 @@ h1,h2,h3,h4,h5{font-family:'Montserrat',sans-serif}
 }
 .urgency-bar p{
   color:#fff;font-size:15px;font-weight:700;font-family:'Montserrat',sans-serif;
-  display:flex;align-items:center;justify-content:center;gap:10px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  flex-wrap:wrap;text-align:center;line-height:1.5;
+}
+@media(max-width:480px){
+  .urgency-bar p{font-size:14px}
+  .urgency-bar{padding:16px 0}
 }
 
 /* ── PAIN ── */
@@ -342,6 +347,10 @@ footer{
   padding:20px;
 }
 .device-photo-wrap img{width:100%;max-width:580px;height:auto;display:block;object-fit:contain}
+@media(max-width:768px){
+  .device-photo-wrap{padding:16px;border-radius:12px}
+  .device-photo-wrap img{max-width:100%}
+}
 
 /* RESPONSIVE */
 @media(max-width:1024px){
@@ -349,6 +358,8 @@ footer{
   .hero{min-height:auto;padding:90px 0 52px}
   .stats-grid{grid-template-columns:1fr 1fr}
   .includes-grid{grid-template-columns:1fr 1fr}
+  .device-section-grid{grid-template-columns:1fr !important}
+  .device-photo-wrap{min-height:240px}
 }
 @media(max-width:768px){
   .pain-grid,.compare-grid{grid-template-columns:1fr}
@@ -381,7 +392,7 @@ footer{
         <span class="sh-sub">Дистанционные медосмотры водителей</span>
       </div>
     </a>
-    <a href="tel:+73510000000" class="sh-phone">+7 (351) 000-00-00</a>
+    <a href="tel:+79935464052" class="sh-phone">+7 (993) 546-40-52</a>
     <a href="#form-bottom" class="sh-cta">Получить расчёт</a>
   </div>
 </header>
@@ -491,9 +502,9 @@ footer{
 <!-- ════ URGENCY ════ -->
 <div class="urgency-bar">
   <div class="wrap">
-    <p>
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M9 7v4M9 13.5h.01M3.5 16h11l-5.5-14-5.5 14z"/></svg>
-      Штраф за допуск водителя без осмотра — до <strong>30 000 ₽</strong> за каждый случай по ст. 11.32 КоАП РФ
+    <p style="flex-wrap:wrap;gap:6px;line-height:1.5;text-align:center">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" style="flex-shrink:0"><path d="M9 7v4M9 13.5h.01M3.5 16h11l-5.5-14-5.5 14z"/></svg>
+      <span>Штраф за допуск водителя без осмотра — до <strong style="white-space:nowrap">30 000 ₽</strong> за каждый случай по ст.&nbsp;11.32 КоАП&nbsp;РФ</span>
     </p>
   </div>
 </div>
@@ -577,7 +588,7 @@ footer{
 <!-- ════ DEVICE PHOTO ════ -->
 <section class="section section--gray">
   <div class="wrap">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
+    <div class="device-section-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center">
       <div class="device-photo-wrap">
         <img src="img/landing_device.jpg" alt="Терминал DIMECO T1 — предрейсовый осмотр">
       </div>
@@ -619,7 +630,7 @@ footer{
     <div class="tariff-row">
       <div class="tc">
         <div class="tc-badge tc-badge--teal">Экономия 33%</div>
-        <div class="tc-osm">200 осмотров</div>
+        <div class="tc-osm">Старт · 200 осм.</div>
         <div class="tc-price">70</div>
         <div class="tc-per">₽ за осмотр</div>
         <div class="tc-month"><div class="tc-month-num">14 000 ₽</div><div class="tc-month-lbl">в месяц</div></div>
@@ -627,7 +638,7 @@ footer{
       </div>
       <div class="tc">
         <div class="tc-badge tc-badge--teal">Экономия 28%</div>
-        <div class="tc-osm">300 осмотров</div>
+        <div class="tc-osm">Базовый · 300 осм.</div>
         <div class="tc-price">50</div>
         <div class="tc-per">₽ за осмотр</div>
         <div class="tc-month"><div class="tc-month-num">15 000 ₽</div><div class="tc-month-lbl">в месяц</div></div>
@@ -635,7 +646,7 @@ footer{
       </div>
       <div class="tc tc--hot">
         <div class="tc-badge tc-badge--blue">Популярный</div>
-        <div class="tc-osm">400 осмотров</div>
+        <div class="tc-osm">Стандарт · 400 осм.</div>
         <div class="tc-price">42</div>
         <div class="tc-per">₽ за осмотр</div>
         <div class="tc-month"><div class="tc-month-num">17 000 ₽</div><div class="tc-month-lbl">в месяц</div></div>
@@ -643,18 +654,18 @@ footer{
       </div>
       <div class="tc">
         <div class="tc-badge tc-badge--teal">Экономия 45%</div>
-        <div class="tc-osm">500 осмотров</div>
+        <div class="tc-osm">Бизнес · 500 осм.</div>
         <div class="tc-price">38</div>
         <div class="tc-per">₽ за осмотр</div>
         <div class="tc-month"><div class="tc-month-num">19 000 ₽</div><div class="tc-month-lbl">в месяц</div></div>
         <div class="tc-extra">доп. осмотр: <strong>38 ₽</strong></div>
       </div>
       <div class="tc">
-        <div class="tc-badge tc-badge--teal">Экономия 68%</div>
+        <div class="tc-badge tc-badge--teal">Экономия 73%</div>
         <div class="tc-osm">1000 осмотров</div>
-        <div class="tc-price">22</div>
+        <div class="tc-price">28</div>
         <div class="tc-per">₽ за осмотр</div>
-        <div class="tc-month"><div class="tc-month-num">22 000 ₽</div><div class="tc-month-lbl">в месяц</div></div>
+        <div class="tc-month"><div class="tc-month-num">28 000 ₽</div><div class="tc-month-lbl">в месяц</div></div>
         <div class="tc-extra">доп. осмотр: <strong>38 ₽</strong></div>
       </div>
       <div class="tc" style="background:linear-gradient(145deg,var(--navy),var(--navy2));border-color:var(--teal)">
@@ -878,7 +889,7 @@ footer{
       <div style="font-size:12px">ООО «Комплекс-Сервис» · ИНН 7447145136 · Лицензия Л041-01024-74/00376426</div>
     </div>
     <div style="text-align:right">
-      <div style="margin-bottom:4px"><a href="tel:+73510000000" style="color:rgba(255,255,255,.7);font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;text-decoration:none">+7 (351) 000-00-00</a></div>
+      <div style="margin-bottom:4px"><a href="tel:+79935464052" style="color:rgba(255,255,255,.7);font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;text-decoration:none">+7 (993) 546-40-52</a></div>
       <div style="font-size:12px">г. Челябинск, ул. Российская 6а · <a href="#">Политика конфиденциальности</a></div>
     </div>
   </div>
@@ -893,37 +904,50 @@ function toggleFaq(el) {
   if (!wasOpen) item.classList.add('open');
 }
 
-// Form submit hero
+function sendForm(data, formEl, successEl, appNumEl) {
+  fetch('https://formsubmit.co/ajax/klyushin@lpkmed.ru', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+    body: JSON.stringify(data)
+  }).catch(function(){});
+  try { ym(109438091, 'reachGoal', 'form_submit'); } catch(e) {}
+  formEl.style.display = 'none';
+  successEl.classList.add('show');
+  appNumEl.textContent = 'ЗАЯ-' + Date.now().toString().slice(-8);
+}
+
 function submitHero() {
   var name = document.getElementById('h-name').value.trim();
   var phone = document.getElementById('h-phone').value.trim();
   if (!name) { document.getElementById('h-name').focus(); return; }
   if (!phone) { document.getElementById('h-phone').focus(); return; }
-  document.getElementById('hero-form').style.display = 'none';
-  var s = document.getElementById('hero-success');
-  s.classList.add('show');
-  document.getElementById('hero-app-num').textContent = 'ЗАЯ-' + Date.now().toString().slice(-8);
-  // Yandex.Metrika goal - UNCOMMENT AND SET REAL ID:
-  // ym(00000000, 'reachGoal', 'form_submit');
+  var count = document.getElementById('h-count') ? document.getElementById('h-count').value : '';
+  sendForm(
+    {_subject: 'Заявка с предрейс74.рф (Hero)', Имя: name, Телефон: phone, Водителей: count, _template: 'table'},
+    document.getElementById('hero-form'),
+    document.getElementById('hero-success'),
+    document.getElementById('hero-app-num')
+  );
 }
 
-// Form submit bottom
 function submitBottom() {
   var name = document.getElementById('b-name').value.trim();
   var phone = document.getElementById('b-phone').value.trim();
   if (!name) { document.getElementById('b-name').focus(); return; }
   if (!phone) { document.getElementById('b-phone').focus(); return; }
-  document.getElementById('bottom-form').style.display = 'none';
-  var s = document.getElementById('bottom-success');
-  s.classList.add('show');
-  document.getElementById('bottom-app-num').textContent = 'ЗАЯ-' + Date.now().toString().slice(-8);
-  // ym(00000000, 'reachGoal', 'form_submit');
+  var company = document.getElementById('b-company') ? document.getElementById('b-company').value : '';
+  var count = document.getElementById('b-count') ? document.getElementById('b-count').value : '';
+  sendForm(
+    {_subject: 'Заявка с предрейс74.рф (Форма)', Имя: name, Телефон: phone, Компания: company, Водителей: count, _template: 'table'},
+    document.getElementById('bottom-form'),
+    document.getElementById('bottom-success'),
+    document.getElementById('bottom-app-num')
+  );
 }
 
-// Phone mask
 function phoneMask(inp) {
   inp.addEventListener('input', function() {
-    var v = this.value.replace(/\D/g,'');
+    var v = this.value.replace(/[^0-9]/g,'');
     if (v.startsWith('8')) v = '7' + v.slice(1);
     if (!v.startsWith('7')) v = '7' + v;
     v = v.slice(0,11);
@@ -935,17 +959,14 @@ function phoneMask(inp) {
     this.value = r;
   });
 }
-phoneMask(document.getElementById('h-phone'));
-phoneMask(document.getElementById('b-phone'));
+var ph = document.getElementById('h-phone');
+var pb = document.getElementById('b-phone');
+if(ph) phoneMask(ph);
+if(pb) phoneMask(pb);
 
-// Sticky header shadow on scroll
 window.addEventListener('scroll', function() {
   var h = document.querySelector('.sticky-header');
-  if (window.scrollY > 10) {
-    h.style.boxShadow = '0 4px 32px rgba(0,0,0,.3)';
-  } else {
-    h.style.boxShadow = 'none';
-  }
+  if(h) h.style.boxShadow = window.scrollY > 10 ? '0 4px 32px rgba(0,0,0,.3)' : 'none';
 });
 </script>
 </body>
